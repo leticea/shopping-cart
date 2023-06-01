@@ -73,3 +73,19 @@ footer {
 .coupon i {
   font-size: 2rem;
 }
+
+footer button {
+  margin-top: 3.2rem;
+  background-color: var(--color-brand-color);
+  color: var(--color-text-color-primary);
+  border: 0;
+  font-size: 2rem;
+  padding-block: 2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: var(--color-brand-color-light);
+}
