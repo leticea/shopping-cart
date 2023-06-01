@@ -54,3 +54,22 @@ footer {
   padding: 3.2rem;
   border-top: 1px solid var(--color-stroke-color);
 }
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.coupon {
+  margin-top: 1.6rem;
+  color: var(--color-brand-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.coupon i {
+  font-size: 2rem;
+}
