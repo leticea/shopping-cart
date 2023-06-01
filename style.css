@@ -22,35 +22,47 @@
 }
 
 body {
-  font-size: 1.6rem;
   background-color: var(--color-background-color);
   color: var(--color-text-color-primary);
+  font-size: 1.6rem;
 }
 
 #app {
   height: 100vh;
   max-width: 42.8rem;
   margin-left: auto;
-  background-color: var(--color-surface-color);
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+  background-color: var(--color-surface-color);
 }
 
 header {
-  font-size: 2rem;
-  color: var(--color-text-color-secondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-stroke-color);
   padding: 2.4rem 3.2rem;
+  border-bottom: 1px solid var(--color-stroke-color);
+  color: var(--color-text-color-secondary);
+  font-size: 2rem;
 }
 
 main {
-  padding: 3.2rem;
   display: grid;
   place-content: start;
+  padding: 3.2rem;
   gap: 4.8rem;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-stroke-color);
+  border-radius: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-background-color);
 }
 
 .item {
@@ -70,10 +82,15 @@ main {
 }
 
 .price-quantity {
+  width: 23rem;
   margin-top: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.price {
+  font-weight: 700;
 }
 
 .quantity {
@@ -92,15 +109,16 @@ main {
 }
 
 .quantity button {
-  border-radius: 0.8rem;
-  border: 1px solid #fff;
   background-color: transparent;
   color: var(--color-brand-color-light);
+  border-radius: 0.8rem;
+  border: 1px solid #fff;
   font-size: 1.6rem;
 }
 
 .quantity button.add {
   border-color: var(--color-brand-color-light);
+  cursor: pointer;
 }
 
 .quantity button.add:hover {
@@ -110,6 +128,7 @@ main {
 
 .quantity button.sub {
   border-color: var(--color-stroke-color);
+  cursor: pointer;
 }
 
 .quantity button.sub:hover {
@@ -129,11 +148,11 @@ footer {
 }
 
 .coupon {
-  margin-top: 1.6rem;
-  color: var(--color-brand-color-light);
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 1.6rem;
+  color: var(--color-brand-color-light);
   gap: 0.8rem;
 }
 
@@ -142,14 +161,14 @@ footer {
 }
 
 footer button {
+  width: 100%;
   margin-top: 3.2rem;
   background-color: var(--color-brand-color);
   color: var(--color-text-color-primary);
   border: 0;
-  font-size: 2rem;
   padding-block: 2rem;
-  width: 100%;
   border-radius: 0.8rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
