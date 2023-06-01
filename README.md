@@ -11,7 +11,7 @@
   <img alt="" src=".github/image.png">
 </p>
 
-# Shopping Cart
+# Shopping Cart Interface
 
 ## 🚀 Tecnologias
 
